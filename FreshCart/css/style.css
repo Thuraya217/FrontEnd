@@ -1,0 +1,172 @@
+.container {
+  margin-top: 30px;
+}
+
+.main-nav {
+  height: 85px;
+  display: flex;
+  align-items: center;
+  background: #fff;
+}
+
+.navbar-brand {
+  font-size: 26px;
+}
+
+.nav-link-custom {
+  font-size: 17px;
+  font-weight: 500;
+  color: #16a34a !important;
+}
+
+.nav-link-custom:hover {
+  color: #0d8a3d !important;
+}
+
+.social-icons a {
+  transition: .2s;
+}
+
+.social-icons a:hover {
+  color: #16a34a !important;
+}
+
+@media (max-width: 992px) {
+  .main-nav {
+    height: auto;
+    padding: 15px 0;
+  }
+
+  .nav-link-custom {
+    padding: 10px 0;
+  }
+}
+
+.slider-img {
+  height: 380px;
+  object-fit: cover;
+  border-radius: 18px;
+}
+
+@media (max-width: 768px) {
+  .slider-img { height: 220px; }
+}
+
+@media (max-width: 576px) {
+  .slider-img { height: 180px; }
+}
+
+.product-card {
+  background: white;
+  border-radius: 16px;
+  padding: 1rem;
+  border: 1px solid #eee;
+  cursor: pointer;
+  transition: .3s;
+  text-align: center;
+}
+
+.product-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 8px 25px rgba(0,0,0,.12);
+}
+
+.product-img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 12px;
+}
+
+.detail-img {
+  height: 450px;
+  width: 100%;
+  object-fit: contain;
+  border-radius: 20px;
+  background: #fff;
+  padding: 20px;
+  box-shadow: 0 10px 25px rgba(0,0,0,.05);
+}
+
+#name {
+  font-size: 32px;
+  font-weight: 700;
+  color: #111;
+  margin-bottom: 10px;
+}
+
+#price {
+  font-size: 26px;
+  font-weight: 600;
+  margin-bottom: 20px;
+  color: #16a34a;
+}
+
+#desc {
+  font-size: 19px;
+  line-height: 1.8;
+  color: #555;
+  margin-bottom: 30px;
+}
+
+.btn-outline-dark {
+  font-size: 18px;
+  padding: 12px 32px;
+  border-radius: 12px;
+}
+
+.product-details {
+  padding: 10px 20px;
+}
+
+@media (max-width: 768px) {
+  .detail-img {
+    height: 300px;
+    padding: 10px;
+  }
+
+  #name {
+    font-size: 24px;
+  }
+
+  #price {
+    font-size: 20px;
+  }
+
+  #desc {
+    font-size: 16px;
+  }
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  filter: invert(1);
+}
+
+.page-loader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(255,255,255,.7);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 9999;
+  backdrop-filter: blur(2px);
+  display: none;
+}
+
+.page-loader .spinner {
+  width: 60px;
+  height: 60px;
+  border: 6px solid #ddd;
+  border-top: 6px solid #16a34a;
+  border-radius: 50%;
+  animation: spin 0.7s linear infinite;
+}
+
+@keyframes spin {
+  to { transform: rotate(360deg); }
+}

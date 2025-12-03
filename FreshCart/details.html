@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Product Details</title>
+
+  <link rel="stylesheet" href="./css/bootstrap.min.css" />
+  <link rel="stylesheet" href="./css/style.css" />
+</head>
+
+<body class="bg-light">
+
+  <div class="container my-5">
+
+    <div class="row g-5">
+
+      <div class="col-md-6">
+        <div id="productSlider" class="carousel slide">
+          <div class="carousel-inner" id="imagesContainer"></div>
+
+          <button class="carousel-control-prev" type="button" data-bs-target="#productSlider" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon"></span>
+          </button>
+
+          <button class="carousel-control-next" type="button" data-bs-target="#productSlider" data-bs-slide="next">
+            <span class="carousel-control-next-icon"></span>
+          </button>
+        </div>
+      </div>
+
+      <div class="col-md-6 product-details">
+        <h2 id="name"></h2>
+        <h4 id="price"></h4>
+        <p id="desc"></p>
+        <a href="index.html" class="btn btn-outline-dark mt-4">Back</a>
+      </div>
+
+    </div>
+
+  </div>
+
+  <script src="./js/bootstrap.bundle.min.js"></script>
+  <script src="./js/script.js"></script>
+
+</body>
+</html>
